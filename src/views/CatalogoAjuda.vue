@@ -49,9 +49,9 @@
         v-for="catalogo of catalogoLista"
         :key="catalogo.id"
         class="mx-auto"
-        max-width="200"
+        max-width="250"
       >
-        <v-img :src="catalogo.imagem" height="200px"></v-img>
+        <v-img :src="catalogo.imagem" height="150px"></v-img>
 
         <v-card-title> {{ catalogo.nome }} </v-card-title>
 
@@ -63,7 +63,12 @@
             color="orange lighten-2"
             text
           >
-            Ir para o site
+            <a
+              :href="catalogo.link"
+              color="inherit"
+              style="text-decoration: none"
+              >Ir para o site</a
+            >
           </v-btn>
 
           <v-spacer></v-spacer>

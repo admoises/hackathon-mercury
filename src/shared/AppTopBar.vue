@@ -52,5 +52,7 @@ export default {
 </script>
 
 <style scoped>
-
+.app-top-bar a {
+  text-decoration: none;
+}
 </style>
