@@ -12,9 +12,9 @@
             <v-expansion-panels>
                 <v-expansion-panel v-for="conteudo of listaConteudos" :key="conteudo.id">
                     <v-expansion-panel-header>{{ conteudo.nome }}</v-expansion-panel-header>
-                        <v-expansion-panel-content id="card">
+                        <div id="card">
                             <v-img max-width="50px" :src="conteudo.url"></v-img><p> {{ conteudo.texto }}</p>
-                        </v-expansion-panel-content>
+                        </div>
                     </v-expansion-panel>
             </v-expansion-panels>
                 </v-container>
@@ -75,11 +75,6 @@ export default {
 <style scoped>
   #card .v-img{
     max-width: 50px;
-  }
-  #card{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
   }
   .inicio-imagem {
     border: solid 2px;
