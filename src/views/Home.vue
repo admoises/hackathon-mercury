@@ -1,15 +1,11 @@
 <template>
 
   <div class="home">
-        <v-btn color="primary">
-              <router-link to="/about">Setembro Amarelo</router-link> |
-            </v-btn>
-    
+    <p>teste</p>
   </div>
 </template>
 
 <script>
-
 
 export default {
   name: 'home',
