@@ -58,11 +58,7 @@
         <!-- <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle> -->
 
         <v-card-actions>
-          <v-btn
-            onclick="window.location.href = 'http://pt.stackoverflow.com'"
-            color="orange lighten-2"
-            text
-          >
+          <v-btn color="orange lighten-2" text>
             <a
               :href="catalogo.link"
               color="inherit"
@@ -73,13 +69,13 @@
 
           <v-spacer></v-spacer>
 
-          <v-btn icon @click="show = !show">
+          <v-btn icon @click="toggleDisplay(catalogo)">
             <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
           </v-btn>
         </v-card-actions>
 
         <v-expand-transition>
-          <div v-show="show">
+          <div v-show="catalogo.show">
             <v-divider></v-divider>
 
             <v-card-text>
@@ -108,14 +104,24 @@ export default {
     fetch("https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json")
       .then((resposta) => resposta.json())
       .then((json) => {
-        this.catalogoLista = json;
-        console.log(this.catalogoLista);
+        this.catalogoLista = json.map((item) => {
+          item.show = false;
+          return item;
+        });
       });
+  },
+  methods: {
+    toggleDisplay(itemCatalogo) {
+      itemCatalogo.show = !itemCatalogo.show;
+    },
   },
 };
 </script>
 
 <style scope>
+.catalogo-de-ajuda a{
+  text-decoration: none;
+}
 .box {
   display: flex;
   flex-wrap: wrap;
