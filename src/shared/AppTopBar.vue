@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="app-top-bar">
         <v-app-bar app color="#FFD700">
             <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
             <v-toolbar-title>Projeto Hackathon</v-toolbar-title>
@@ -20,7 +20,7 @@
             <router-link to="/about">
                 <v-list-item>
                     <v-list-item-icon>
-                    <v-icon>mdi-account</v-icon>
+                    <v-icon>mdi-information-outline</v-icon>
                     </v-list-item-icon>
                     <v-list-item-title>Sobre</v-list-item-title>
                 </v-list-item>
@@ -29,7 +29,7 @@
             <router-link to="/Prevencao">
                 <v-list-item>
                     <v-list-item-icon>
-                    <v-icon>mdi-account</v-icon>
+                    <v-icon>mdi-hazard-lights</v-icon>
                     </v-list-item-icon>
                     <v-list-item-title>Prevenção</v-list-item-title>
                 </v-list-item>
@@ -38,7 +38,7 @@
             <router-link to="/CatalogoAjuda">
                 <v-list-item>
                     <v-list-item-icon>
-                    <v-icon>mdi-account</v-icon>
+                    <v-icon>mdi-phone-plus</v-icon>
                     </v-list-item-icon>
                     <v-list-item-title>Catalogo Ajuda</v-list-item-title>
                 </v-list-item>
@@ -61,7 +61,9 @@ export default {
 </script>
 
 <style scoped>
-.app-top-bar a {
+
+.app-top-bar a{
   text-decoration: none;
 }
+
 </style>

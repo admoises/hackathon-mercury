@@ -3,7 +3,7 @@
       <h1 id="titulo">Sobre a aplicação</h1>
       <p id="texto">O grupo decidiu pelo tema Setembro Amarelo por enxergar a possibilidade de 'linkar' nele os<br>
       outros temas. Racismo é sem dúvidas um dos motivos pelos quais pessoas cometem<br>
-      suicídio [1], e a pandemia de COVID-19, que trouxe consigo isolamente social nunca antes<br>
+      suicídio [1], e a pandemia de COVID-19, que trouxe consigo isolamento social nunca antes<br>
       vivenciado pelas gerações atuais, também tem sido um gatilho [2]. </p>
       <a id="link1" href="https://emais.estadao.com.br/noticias/comportamento,setembro-amarelo-racismo-e-exclusao-social-explicam-alto-indice-de-suicidio-entre-negros-no-pais,70003420170">[1] Racismo e sucídio</a>
       <p></p>
