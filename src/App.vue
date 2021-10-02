@@ -1,13 +1,31 @@
 <template>
-  <div id="app">
+  <v-app>
+    
+    <v-main>
+      <AppTopBar/>
+    </v-main>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/CatalogoAjuda">CatalogoAjuda</router-link>
+      <router-link to="/Prevencao">Prevencao</router-link>
     </div>
-    <router-view />
-  </div>
+    <router-view/>
+  </v-app>
 </template>
+
+<script>
+import AppTopBar from './shared/AppTopBar.vue'
+
+export default {
+  data: () => ({
+  
+    }),
+  components: {
+    AppTopBar,
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
