@@ -18,12 +18,12 @@
                   cols="6"
                   md="2"
                 >
-                  <a :href="catalogo.link">
+                  <a :href="catalogo.link" style="text-decoration: none">
                     <v-avatar size="60">
                       <img :src="catalogo.imagem" :alt="catalogo.nome" />
                     </v-avatar>
                     <v-sheet height="150">
-                      <span>{{ catalogo.nome }}</span>
+                      <div class="subtitle-2">{{ catalogo.nome }}</div>
                     </v-sheet>
                   </a>
                 </v-col>
@@ -43,6 +43,41 @@
         </v-main>
       </v-app>
     </template>
+
+    <div class="box">
+      <v-card
+        v-for="catalogo of catalogoLista"
+        :key="catalogo.id"
+        class="mx-auto"
+        max-width="200"
+      >
+        <v-img :src="catalogo.imagem" height="200px"></v-img>
+
+        <v-card-title> {{ catalogo.nome }} </v-card-title>
+
+        <!-- <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle> -->
+
+        <v-card-actions>
+          <v-btn color="orange lighten-2" text> Ir para o site </v-btn>
+
+          <v-spacer></v-spacer>
+
+          <v-btn icon @click="show = !show">
+            <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
+          </v-btn>
+        </v-card-actions>
+
+        <v-expand-transition>
+          <div v-show="show">
+            <v-divider></v-divider>
+
+            <v-card-text>
+              {{ catalogo.descricao }}
+            </v-card-text>
+          </div>
+        </v-expand-transition>
+      </v-card>
+    </div>
   </div>
 </template>
 
@@ -52,6 +87,7 @@ export default {
     return {
       catalogoLista: [],
       drawer: null,
+      show: false,
     };
   },
 
@@ -69,4 +105,11 @@ export default {
 </script>
 
 <style scope>
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mx-auto {
+  margin: 0.4em;
+}
 </style>
