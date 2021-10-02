@@ -17,7 +17,7 @@
                 </v-list-item>
             </router-link>
 
-            <router-link to="/Sobre">
+            <router-link to="/about">
                 <v-list-item>
                     <v-list-item-icon>
                     <v-icon>mdi-account</v-icon>
@@ -32,6 +32,15 @@
                     <v-icon>mdi-account</v-icon>
                     </v-list-item-icon>
                     <v-list-item-title>Prevenção</v-list-item-title>
+                </v-list-item>
+            </router-link>
+
+            <router-link to="/CatalogoAjuda">
+                <v-list-item>
+                    <v-list-item-icon>
+                    <v-icon>mdi-account</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title>Catalogo Ajuda</v-list-item-title>
                 </v-list-item>
             </router-link>
 
