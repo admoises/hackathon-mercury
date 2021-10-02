@@ -1,6 +1,6 @@
 <template>
   <div class="catalogo-de-ajuda">
-    <template>
+    <!--     <template>
       <v-app id="inspire">
         <v-navigation-drawer v-model="drawer" fixed temporary>
         </v-navigation-drawer>
@@ -42,7 +42,7 @@
           </v-container>
         </v-main>
       </v-app>
-    </template>
+    </template> -->
 
     <div class="box">
       <v-card
@@ -58,7 +58,13 @@
         <!-- <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle> -->
 
         <v-card-actions>
-          <v-btn color="orange lighten-2" text> Ir para o site </v-btn>
+          <v-btn
+            onclick="window.location.href = 'http://pt.stackoverflow.com'"
+            color="orange lighten-2"
+            text
+          >
+            Ir para o site
+          </v-btn>
 
           <v-spacer></v-spacer>
 
