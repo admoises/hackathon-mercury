@@ -10,14 +10,16 @@
       <a id="link2" href="https://g1.globo.com/ro/rondonia/noticia/2021/09/23/setembro-amarelo-taxa-de-suicidio-aumenta-111percent-no-mes-mais-letais-da-pandemia-em-rondonia.ghtml">[2] Pandemia e suicídio</a>
       <v-img id="img1" src="https://gntech.med.br/pub/media/wysiwyg/Capa_-_BLOG_01.png"></v-img>
       <v-divider></v-divider>
-      <p class="fim">Hackaton Decola edição Mercury</p>
-      <a class="fim" href="https://www.iteris.com.br/">Iteris Consultoria e Software</a>
+      <div>
+        <p class="fim">Hackaton Decola edição Mercury</p>
+        <a class="fim" href="https://www.iteris.com.br/"><span>Iteris Consultoria e Software</span></a>
+      </div>
     </v-container>
-
 </template>
 
 <style>
 #principal{
+  height: 100%;
   background-color: rgb(243, 233, 95);
 }
 
@@ -28,7 +30,7 @@
 #texto{
   color: rgb(46, 46, 36);
   margin-top: 5vh;
-  height: 30vh;
+
 }
 
 #img1{
@@ -53,8 +55,13 @@
   color: orange;
 }
 
-.fim{
+/*.fim{
   color: rgb(46, 46, 36);
+}*/
+
+p, span {
+  color: black;
+  text-decoration: none;
 }
 .fim:hover{
   color: orange;
