@@ -1,10 +1,4 @@
 <template>
-<<<<<<< HEAD
-
-  <div class="home">
-    
-  </div>
-=======
   <v-container id="principal">
         <v-btn id="ajuda">
               <a href="https://www.cvv.org.br">Preciso de ajuda urgente</a>
@@ -15,7 +9,6 @@
         <p class="fim">Hackaton Decola edição Mercury</p>
         <a class="fim" href="https://www.iteris.com.br/">Iteris Consultoria e Software</a>
   </v-container>  
->>>>>>> ff21ae91e41126425e1faddfd65eddcf4a429212
 </template>
 
 <script>
