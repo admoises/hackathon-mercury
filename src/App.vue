@@ -1,16 +1,9 @@
 <template>
   <v-app>
-    
+    <AppTopBar/>
     <v-main>
-      <AppTopBar/>
+      <router-view/>
     </v-main>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/CatalogoAjuda">CatalogoAjuda</router-link>
-      <router-link to="/Prevencao">Prevencao</router-link>
-    </div>
-    <router-view/>
   </v-app>
 </template>
 

@@ -1,10 +1,8 @@
 <template>
-    <v-app>
-        <v-app-bar app color="#AA9944" dark>
-        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-        <v-toolbar-title>
-            Projeto Hackathon
-        </v-toolbar-title>
+    <div>
+        <v-app-bar app color="#FFD700">
+            <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+            <v-toolbar-title>Projeto Hackathon</v-toolbar-title>
         </v-app-bar>
         <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list nav dense>
@@ -40,7 +38,7 @@
             </v-list-item-group>
         </v-list>
         </v-navigation-drawer>
-  </v-app>
+    </div>
 </template>
 
 <script>
